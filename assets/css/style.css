@@ -1,3 +1,9 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -68,4 +74,66 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+
+.container-fluid {
+  width: 80%;
+}
+
+.row {
+  width: 100%;
+  z-index: 999 !important;
+}
+
+.col-9 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.border-dotted {
+  border-top: 2px dotted;
+  border-width: thin;
+}
+
+.border-solid {
+  border-left: solid 1px;
+  border-color: white;
+}
+
+.border-top {
+  border-top: 1px solid white;
+}
+
+.border-bottom-dashed {
+  border-bottom: 2px dotted;
+  border-width: thin;
+}
+
+textarea {
+  all: unset;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+}
+
+button {
+  all: unset;
+  color: white;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  background-color: #28a745;
+}
+
+
+img {
+  height: 50px;
+  width: 50px;
 }
