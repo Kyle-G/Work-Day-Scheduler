@@ -22,22 +22,24 @@ var update = function () {
     $('textarea').each(function(index) {
 
         if(textArr[index].id + 9 <= 12) {
-            if (textArr[index].id + 9 > result ) {
-                $(this).parent().parent().attr("class", "row bg-secondary border-top");
-            } else if (textArr[index].id + 9 == result) {
+            
+             if (textArr[index].id + 9 == result) {
                 $(this).parent().parent().attr("class", "row bg-danger border-top");
+            } else if (textArr[index].id + 9 > result ) {
+                $(this).parent().parent().attr("class", "row bg-warning  border-top");
             } else if (textArr[index].id + 9 < result) {
-                $(this).parent().parent().attr("class", "row bg-warning border-top");
+                $(this).parent().parent().attr("class", "row bg-secondary border-top");
             }
         }
 
         if(textArr[index].id + 9 > 12) {
-            if (textArr[index].id + 9 - 12 < result) {
-                $(this).parent().parent().attr("class", "row bg-secondary border-top");
-            } else if (textArr[index].id + 9 -12 == result) {
+             if (textArr[index].id + 9 == result) {
                 $(this).parent().parent().attr("class", "row bg-danger border-top");
-            } else if (textArr[index].id + 9 -12 > result) {
-                $(this).parent().parent().attr("class", "row bg-warning border-top");
+             } else if (textArr[index].id + 9 > result) {
+                $(this).parent().parent().attr("class", "row bg-warning border-top");   
+            } else if (textArr[index].id + 9 < result) {
+                $(this).parent().parent().attr("class", "row bg-secondary border-top");
+             
             }
         }
     });
