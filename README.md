@@ -15,7 +15,7 @@ An easy to use calendar to save your daily tasks.
 ![Password Generator](/assets/images/work-day.png "Work Day Scheduler")
 
 ## Website
-https://github.com/Kyle-G/password-generator/
+https://github.com/Kyle-G/Work-Day-Scheduler/
 
 ## Contribution
 Made with ❤️ by Kyle Greer
