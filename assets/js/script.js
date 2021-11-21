@@ -1,6 +1,5 @@
 
 var textArr = [];
-window.dateFns = require('date-fns');
 var getHours = dateFns.getHours;
 
 
