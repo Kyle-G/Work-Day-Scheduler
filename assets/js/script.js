@@ -75,7 +75,7 @@ function loadStorageTexts() {
 
 function loadTexts() {
     
-    var savedTexts = localStorage.getItem('texts');
+    var savedTexts = sessionStorage.getItem('texts');
 
     if(!savedTexts) {
         return false;
@@ -88,7 +88,7 @@ function loadTexts() {
 }
 
 function saveText() {
-    localStorage.setItem("texts", JSON.stringify(textArr));
+    sessionStorage.setItem("texts", JSON.stringify(textArr));
 }
 
 assignID();
