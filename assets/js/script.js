@@ -1,8 +1,8 @@
 
 var textArr = [];
-var isBefore = dateFns.isBefore;
-var subHours = dateFns.subHours;
+window.dateFns = require('date-fns');
 var getHours = dateFns.getHours;
+
 
 window.onload = function () {
     update();
